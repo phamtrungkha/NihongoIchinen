@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context=".kanji.KanjiActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Học"
+            android:id="@+id/kanji_btn_next"
+            android:layout_column="0"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin"
+            android:id="@+id/kanji_btn_info"
+            android:layout_span="2"
+            android:layout_column="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_level"
+            android:text="Trình độ"
+            android:textStyle="bold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_checkall"
+            android:text="Toàn bộ"
+            android:textStyle="bold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_from"
+            android:text="Từ bài "
+            android:textStyle="bold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_to"
+            android:text="Đến bài"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_level0"
+            android:text="JLPT N5"/>
+        <CheckBox
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/kanji_cb_level0_all"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level0_from"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level0_to"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_level1"
+            android:text="JLPT N4"/>
+        <CheckBox
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/kanji_cb_level1_all"/>
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level1_from"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level1_to"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_level2"
+            android:text="JLPT N3"/>
+        <CheckBox
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/kanji_cb_level2_all"/>
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level2_from"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level2_to"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_level3"
+            android:text="JLPT N2"/>
+        <CheckBox
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/kanji_cb_level3_all"/>
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level3_from"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level3_to"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_tv_level4"
+            android:text="JLPT N1"/>
+        <CheckBox
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/kanji_cb_level4_all"/>
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level4_from"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/kanji_et_level4_to"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+
+
+
+
+</TableLayout>

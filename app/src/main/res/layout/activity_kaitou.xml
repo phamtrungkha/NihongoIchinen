@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kaitou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ptk.nihongoichinen.kaitou.KaitouActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_tv_khoangcach"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:text="Cách nhau: "/>
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_et_khoangcach"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/kaitou_tv_khoangcach"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_tv_phut"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:text="phút."
+        android:layout_toRightOf="@+id/kaitou_et_khoangcach"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_btn_next"
+        android:text="Bắt đầu"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_btn_info"
+        android:text="Thông tin"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/kaitou_btn_next"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_cb_level0"
+        android:layout_below="@+id/kaitou_tv_khoangcach"
+        android:text="JLPT N5"
+        android:layout_marginTop="20dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_cb_level1"
+        android:layout_below="@+id/kaitou_cb_level0"
+        android:text="JLPT N4"
+        android:layout_marginTop="5dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_cb_level2"
+        android:layout_below="@+id/kaitou_cb_level1"
+        android:text="JLPT N3"
+        android:layout_marginTop="5dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_cb_level3"
+        android:layout_below="@+id/kaitou_cb_level2"
+        android:text="JLPT N2"
+        android:layout_marginTop="5dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaitou_cb_level4"
+        android:layout_below="@+id/kaitou_cb_level3"
+        android:text="JLPT N1"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

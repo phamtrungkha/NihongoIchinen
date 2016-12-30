@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ptk.nihongoichinen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kanji.KanjiActivity" />
+        <activity android:name=".kanji.KanjiListActivity" />
+        <activity android:name=".kanji.KanjiLearnActivity" />
+        <activity android:name=".reibunN4N5.ReibunN4N5Activity" />
+        <activity android:name=".reibunN4N5.ReibunLearnN4N5Activity" />
+        <activity android:name=".reibunN3.ReibunN3Activity" />
+        <activity android:name=".reibunN3.ReibunLearnN3Activity" />
+        <activity android:name=".reibun.ReibunActivity" />
+        <activity android:name=".reibun.ReibunLearnActivity" />
+        <activity android:name=".EmptyActivity" />
+        <activity android:name=".itkotoba.ITKotobaActivity" />
+        <activity android:name=".itkotoba.ITKotobaLearnActivity" />
+        <activity android:name=".itkotoba.ITKotobaListActivity" />
+        <activity android:name=".kaitou.KaitouActivity" />
+        <activity android:name=".kaitou.KaitouLearnActivity" />
+
+        <service
+            android:name=".kaitou.KaitouService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".AboutActivity"></activity>
+    </application>
+
+</manifest>
